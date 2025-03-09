@@ -1,10 +1,11 @@
 # Cura Security Reviews
 
-[logo.pdf](https://github.com/user-attachments/files/19151719/logo.pdf)
+![logo.pdf](https://github.com/All-Khwarizmi/security-reviews/assets/logo.pdf)
 
 ## Overview
 
-This repository contains security reviews, assessments, and related documentation. The purpose is to track security audits, my share findings, and document vulnerabilities.
+> [!NOTE]
+> This repository contains security reviews, assessments, and related documentation. The purpose is to track security audits, my share findings, and document vulnerabilities.
 
 ## Structure
 
