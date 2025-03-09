@@ -1,6 +1,6 @@
 # Cura Security Reviews
 
-![logo.pdf](https://github.com/All-Khwarizmi/security-reviews/assets/logo.pdf)
+![logo.pdf](https://github.com/All-Khwarizmi/security-reviews/blob/main/assets/logo.png)
 
 ## Overview
 
