@@ -1,44 +1,47 @@
-# Cura Security Reviews
+# Jason Suárez - Security Research Portfolio
 
 <div align="center">
   <img src="https://github.com/All-Khwarizmi/security-reviews/blob/main/assets/logo.png" alt="Cura Security Logo" width="300px">
-  <h3>Professional Smart Contract Security Services</h3>
-  <p>Securing the blockchain ecosystem through rigorous analysis and comprehensive auditing</p>
+  <h3>Smart Contract Security Research & Learning Journey</h3>
+  <p>Documenting my growth and contributions to blockchain security</p>
 </div>
 
-## About
+## About This Repository
 
-Cura Security specializes in thorough security assessments of smart contracts and blockchain protocols. With a methodical approach to vulnerability detection and a commitment to clear, actionable reporting, we help projects strengthen their security posture and protect user assets.
+Welcome to my security research portfolio. This repository documents my learning journey in smart contract security, containing practice assessments, security research, and educational resources I've created while developing my skills in blockchain security.
 
-> [!TIP]
-> Contact me for collaboration, audit services, or questions about my findings at:
+I'm currently building expertise in smart contract auditing through systematic study, practice assessments, and participation in audit contests. This repository serves as both a learning log and a demonstration of my growing capabilities.
+
+> [!NOTE]
+> I'm actively learning and improving my security assessment skills. The assessments here represent my current understanding and approach to security analysis. I welcome feedback and collaboration opportunities!
+> 
+> Connect with me:
 > - 🐦 Twitter: [@swarecito](https://twitter.com/swarecito)
 > - 💼 LinkedIn: [Jason Suárez](https://www.linkedin.com/in/jason-suarez/)
 
-## Expertise
+## Learning Focus
 
-- 🔎 **Smart Contract Auditing** - Comprehensive security reviews of EVM-compatible contracts
-- 🔧 **Protocol Design Consultation** - Architectural security guidance and threat modeling
-- 🛠️ **Security Tool Development** - Custom analysis scripts and testing frameworks
-- 📊 **Post-Exploit Analysis** - Detailed breakdowns of security incidents and lessons learned
+- 🔎 **Smart Contract Vulnerability Analysis** - Identifying and understanding common vulnerabilities in EVM contracts
+- 📚 **Security Best Practices** - Researching and implementing industry standards for secure contract development
+- 🛠️ **Audit Methodology Development** - Building a systematic approach to security assessments
+- 🧪 **Testing Techniques** - Exploring effective verification methods for security properties
 
-## Portfolio Highlights
+## Assessment Portfolio
 
-| Project | Type | Date | Technology | Report |
-|---------|------|------|------------|--------|
-| InheritableSmartContractWallet | Full Audit | March 2025 | Solidity 0.8.26 | [Report](./reviews/2025-03-13-inherited-wallet/2025-03-13-inheritable-smart-contract-wallet.pdf) |
-| PasswordStore | Security Assessment | March 2025 | Solidity 0.8.x | [Report](./reviews/2025-03-09-password-store/2025-03-09-password-store-audit.pdf) |
+| Project | Type | Date | Purpose | Report |
+|---------|------|------|---------|--------|
+| InheritableSmartContractWallet | Practice Assessment | March 2025 | Learning exercise | [Report](./reviews/2025-03-13-inherited-wallet/2025-03-13-inheritable-smart-contract-wallet.pdf) |
+| PasswordStore | Practice Review | March 2025 | Skill development | [Report](./reviews/2025-03-09-password-store/2025-03-09-password-store-audit.pdf) |
 
-## Methodology
+## My Approach
 
-My audit process follows a rigorous methodology:
+As I develop my security assessment skills, I'm building a methodical process:
 
-1. **Scoping & Reconnaissance** - Understanding the protocol design, purpose, and architecture
-2. **Static Analysis** - Automated scanning with industry-standard and custom tools
-3. **Manual Code Review** - Line-by-line examination with pattern recognition and vulnerability assessment
-4. **Dynamic Testing** - Custom exploit development and proof-of-concept verification
-5. **Reporting & Communication** - Clear documentation and actionable remediation guidance
-6. **Verification** - Confirming that implemented fixes properly address identified vulnerabilities
+1. **Understanding the Code** - Taking time to thoroughly comprehend protocol functionality and design intent
+2. **Static Analysis** - Using automated tools to identify potential vulnerabilities
+3. **Manual Code Review** - Systematically reviewing code for security issues
+4. **Verification** - Testing findings with proof-of-concept examples when possible
+5. **Clear Documentation** - Practicing clear, actionable security reporting
 
 ## Repository Structure
 
@@ -47,13 +50,13 @@ My audit process follows a rigorous methodology:
 ├── README.md                      # Overview and introduction
 ├── assets/                        # Logos and visual resources
 ├── docs/                          # Documentation and resources
-│   ├── client-preparation/        # Onboarding materials for clients
-│   ├── process/                   # Audit methodologies and checklists
+│   ├── client-preparation/        # Preparation materials for assessments
+│   ├── process/                   # Methodology notes and checklists
 │   └── simple-security-toolkit/   # Security tools and references
-├── reviews/                       # Published security assessments
+├── reviews/                       # Practice security assessments
 │   ├── YEAR-MONTH-DAY-PROJECT/    # Organized by date and project
-│   │   └── REPORT.pdf             # Final deliverable audit reports
-└── templates/                     # Standardized assessment templates
+│   │   └── REPORT.pdf             # Assessment reports
+└── templates/                     # Templates I use for consistency
 ```
 
 ## Getting Started
@@ -65,23 +68,31 @@ git clone https://github.com/All-Khwarizmi/security-reviews.git
 cd security-reviews
 ```
 
-## Audit Services
+## Learning Resources
 
-I offer several security service packages:
+These are some valuable resources I've found helpful in my security learning journey:
 
-- **Full Protocol Audit** - Comprehensive assessment of entire protocol ecosystems
-- **Smart Contract Review** - Focused examination of specific contracts or features
-- **Security Consultation** - Advisory services and best practice guidance
-- **Continuous Monitoring** - Ongoing security oversight during protocol evolution
+- [Secureum Bootcamp](https://secureum.xyz/)
+- [Code4rena Docs](https://docs.code4rena.com/)
+- [Smart Contract Security Verification Standard](https://github.com/securing/SCSVS)
+- [Solidity Patterns](https://github.com/fravoll/solidity-patterns)
+- [DeFi Hack Analysis](https://web3sec.notion.site/)
 
-To discuss your project's security needs, please reach out via [contact information].
+## Future Goals
 
-## License
+As I continue to develop my skills, I plan to:
 
-All published reports are made available with permission from respective clients. The methodologies, templates, and tools in this repository are provided for educational purposes.
+- Participate in more audit contests and bug bounties
+- Contribute to open-source security tools
+- Develop specialized expertise in specific protocol types
+- Build a collection of comprehensive security research articles
+
+## Acknowledgments
+
+I'm grateful to the security community for sharing knowledge and creating opportunities for newcomers to learn. Special thanks to platforms like CodeHawks, Code4rena, and Secureum for making security education more accessible.
 
 ---
 
 <p align="center">
-  <i>Safeguarding blockchain innovation through rigorous security analysis</i>
+  <i>Learning, growing, and contributing to blockchain security one assessment at a time</i>
 </p>
