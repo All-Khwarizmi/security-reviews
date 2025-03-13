@@ -13,7 +13,7 @@ header-includes:
 \centering
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.5\textwidth]{logo.pdf}
+\includegraphics[width=0.5\textwidth]{assets/logo.pdf}
 \end{figure}
 \vspace {2 cm}
 {\Huge\bfseries PROTOCOL_NAME Audit Report\par}
