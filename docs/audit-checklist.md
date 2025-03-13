@@ -27,20 +27,25 @@
 <summary><strong>Repository Setup</strong></summary>
 
 - [ ] Clone the repository
+
 ```bash
 git clone <repository-url>
 cd <repository-name>
 ```
+
 - [ ] Check commit hash/tag to be audited
+
 ```bash
 git log -1 --format="%H"
 ```
+
 </details>
 
 <details>
 <summary><strong>Development Environment</strong></summary>
 
 - [ ] Install dependencies
+
 ```bash
 # For Hardhat
 npm install
@@ -48,7 +53,9 @@ npm install
 # For Foundry
 forge install
 ```
+
 - [ ] Run tests to verify correct setup
+
 ```bash
 # For Hardhat
 npx hardhat test
@@ -56,7 +63,9 @@ npx hardhat test
 # For Foundry
 forge test
 ```
+
 - [ ] Check test coverage
+
 ```bash
 # For Hardhat
 npx hardhat coverage
@@ -64,12 +73,14 @@ npx hardhat coverage
 # For Foundry
 forge coverage
 ```
+
 </details>
 
 <details>
 <summary><strong>Static Analysis Tools Setup</strong></summary>
 
 - [ ] Install required static analysis tools
+
 ```bash
 # Install Slither
 pip3 install slither-analyzer
@@ -80,6 +91,7 @@ cargo install aderyn
 # Install solidity-metrics
 npm install -g solidity-code-metrics
 ```
+
 </details>
 
 ## 3. Initial Code Metrics & Analysis
@@ -88,19 +100,23 @@ npm install -g solidity-code-metrics
 <summary><strong>Code Statistics</strong></summary>
 
 - [ ] Run cloc to understand codebase size
+
 ```bash
 cloc ./src
 ```
+
 </details>
 
 <details>
 <summary><strong>Complexity Analysis</strong></summary>
 
 - [ ] Run solidity-metrics for complexity assessment
+
 ```bash
 solidity-code-metrics ./src/*.sol > metrics.md
 solidity-code-metrics ./src/*.sol --html > metrics.html
 ```
+
 - [ ] Use Solidity Visual Developer extension (right-click on file/folder and select "Solidity: metrics")
 </details>
 
@@ -118,26 +134,34 @@ solidity-code-metrics ./src/*.sol --html > metrics.html
 <summary><strong>Automated Vulnerability Detection</strong></summary>
 
 - [ ] Run Slither
+
 ```bash
 slither .
 ```
+
 - [ ] Run Aderyn
+
 ```bash
 aderyn .
 ```
+
 - [ ] Run additional specialty tools as needed (Mythril, etc.)
+
 ```bash
 myth analyze ./src/Contract.sol
 ```
+
 </details>
 
 <details>
 <summary><strong>Custom Detector Configuration</strong></summary>
 
 - [ ] Configure Slither for project-specific detectors if needed
+
 ```bash
 slither . --detect reentrancy,uninitialized-state
 ```
+
 </details>
 
 <details>
@@ -174,6 +198,7 @@ slither . --detect reentrancy,uninitialized-state
 <summary><strong>Function-Level Review</strong></summary>
 
 For each contract function:
+
 - [ ] Verify authorization checks
 - [ ] Check integer handling
 - [ ] Verify error handling
@@ -242,6 +267,7 @@ For each contract function:
 <summary><strong>Document Findings</strong></summary>
 
 For each finding:
+
 - [ ] Write clear title (including root cause and impact)
 - [ ] Write detailed description
 - [ ] Document vulnerable code snippets
@@ -268,6 +294,7 @@ For each finding:
 <summary><strong>Markdown Report</strong></summary>
 
 - [ ] Format findings in markdown
+
 ```markdown
 ## [H-1] Title of High Severity Finding
 
@@ -283,12 +310,14 @@ Code or steps to reproduce...
 **Recommended Mitigation:**
 Suggested fix...
 ```
+
 </details>
 
 <details>
 <summary><strong>PDF Report Generation</strong></summary>
 
 - [ ] Install required tools
+
 ```bash
 # Install pandoc and LaTeX
 sudo apt-get install pandoc texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra
@@ -296,16 +325,21 @@ sudo apt-get install pandoc texlive-latex-recommended texlive-fonts-recommended 
 # For footnotebackref.sty if needed
 sudo apt-get install texlive-latex-extra
 ```
+
 - [ ] Set up Eisvogel template
+
 ```bash
 mkdir -p ~/.pandoc/templates/
 wget https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/master/eisvogel.tex -O ~/.pandoc/templates/eisvogel.latex
 ```
+
 - [ ] Prepare logo.pdf in the working directory
 - [ ] Generate PDF
+
 ```bash
 pandoc report.md -o report.pdf --from markdown --template=eisvogel --listings
 ```
+
 </details>
 
 ## 9. Client Delivery & Communication
@@ -362,6 +396,7 @@ cloc ./src
 # Count lines in specific file types
 cloc --include-lang=Solidity .
 ```
+
 </details>
 
 <details>
@@ -380,6 +415,7 @@ solidity-code-metrics ./src/*.sol > metrics.md
 # Output to HTML
 solidity-code-metrics ./src/*.sol --html > metrics.html
 ```
+
 </details>
 
 <details>
@@ -404,6 +440,7 @@ slither . --print contract-summary
 # Check function dependencies
 slither . --print function-summary
 ```
+
 </details>
 
 <details>
@@ -422,6 +459,7 @@ aderyn ./src
 # Exclude certain detectors
 aderyn . --exclude-detector unused-return
 ```
+
 </details>
 
 <details>
@@ -441,6 +479,7 @@ forge coverage
 # Fuzzing with Foundry
 forge test --fuzz-runs 10000
 ```
+
 </details>
 
 <details>
@@ -453,7 +492,10 @@ pandoc report.md -o report.pdf --from markdown --template=eisvogel --listings
 # Add table of contents
 pandoc report.md -o report.pdf --from markdown --template=eisvogel --listings --toc
 
+pandoc reviews/<FOLDER_NAME>/final-report.md -o reviews/<FOLDER_NAME>/<DATE>/<PROJECT_NAME>.pdf --from markdown --template=eisvogel --listings --toc
+
 # Generate DOCX for client revisions
 pandoc report.md -o report.docx
 ```
+
 </details>
